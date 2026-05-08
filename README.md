@@ -35,8 +35,6 @@ This project scans log entries and counts:
 - Python 3.x
 
 Check with:
-
-```bash
 python --version
 
 ### C#
