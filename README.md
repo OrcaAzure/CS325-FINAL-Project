@@ -45,15 +45,26 @@ dotnet --version
 
 Python Version
 Run sequential and parallel analysis
-python log_analyzer.py sample_logs/sample.log --mode both
-Run only sequential
-python log_analyzer.py sample_logs/sample.log --mode sequential
-Run only parallel
-python log_analyzer.py sample_logs/sample.log --mode parallel --workers 4
+
+python log_analyzer.py sample.log --mode both
+
+Run only sequential:
+
+python log_analyzer.py sample.log --mode sequential
+
+Run only parallel:
+
+python log_analyzer.py sample.log --mode parallel --workers 4
+
 C# Version
 Run both modes
-dotnet run -- sample_logs/sample.log both
+
+dotnet run -- sample.log both
+
 Run only sequential
-dotnet run -- sample_logs/sample.log sequential
+
+dotnet run -- sample.log sequential
+
 Run only parallel
-dotnet run -- sample_logs/sample.log parallel
+
+dotnet run -- sample.log parallel
