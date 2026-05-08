@@ -43,6 +43,8 @@ python --version
 Check with:
 dotnet --version
 
+- Note: Just download and unzip and you can run it already in cmd jsut make sure its in the folder
+
 Python Version
 - Run sequential and parallel analysis
 
