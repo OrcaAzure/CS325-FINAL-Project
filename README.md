@@ -29,43 +29,15 @@ This project scans log entries and counts:
 - repeated messages
 - execution time
 
-## Project Structure
+## Requirements
 
+### Python
+- Python 3.x
 
-Requirements:
-Python
-Python 3.x
+### C#
+- .NET SDK installed
 
-
-C#
-.NET SDK installed
 Check with:
+
+```bash
 dotnet --version
-Python Version
-
-Run sequential and parallel analysis
-python log_analyzer.py sample_logs/sample.log --mode both
-Run only sequential
-python log_analyzer.py sample_logs/sample.log --mode sequential
-Run only parallel
-python log_analyzer.py sample_logs/sample.log --mode parallel --workers 4
-
-C# Version
-Run both modes
-dotnet run -- sample_logs/sample.log both
-Run only sequential
-dotnet run -- sample_logs/sample.log sequential
-Run only parallel
-dotnet run -- sample_logs/sample.log parallel
-
-
-Expected Output
-
-The program will display:
-
-total lines scanned
-number of errors
-number of warnings
-top repeated messages
-execution time
-speedup comparison between sequential and parallel versions
