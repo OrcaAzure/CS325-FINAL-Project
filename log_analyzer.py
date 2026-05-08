@@ -124,7 +124,7 @@ def analyze_parallel(lines: List[str], workers: int = 4, show_progress: bool = T
     chunk_size = max(1, len(lines) // (workers * 4))
     chunks = list(chunkify(lines, chunk_size))
 
-    result = AnalysisResult(total_lines=len(lines))
+    result = AnalysisResult(total_lines=0) 
     completed = 0
     total_chunks = len(chunks)
 
