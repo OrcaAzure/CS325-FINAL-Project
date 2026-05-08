@@ -34,6 +34,11 @@ This project scans log entries and counts:
 ### Python
 - Python 3.x
 
+Check with:
+
+```bash
+python --version
+
 ### C#
 - .NET SDK installed
 
